@@ -1,0 +1,67 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        title Document
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+    body
+        ul.nav.nav-pills.bg-secondary.p-1.mb-5
+            li.nav-item
+                a.nav-link.active(href='/') Home
+            li.nav-item
+                a.nav-link(href='/category/iphone') Iphone
+            li.nav-item
+                a.nav-link(href='/category/samsung') Samsung
+            li.nav-item
+                a.nav-link(href='/category/huawei') Huawei
+            li.nav-item
+                a.nav-link(href='/category/oppo') Oppo
+            li.nav-item
+                a.nav-link(href='/category/xiaomi') Xiaomi
+            li.nav-item
+                a.nav-link(href='/category/vivo') Vivo
+            li.row.ml-auto.mr-3
+                span.d-flex.text-align-center.nav-link="Cart "+cout
+                form.ml-auto.d-flex.btn-group(action="/users/search" method='GET')
+                    input.form-control(type="text", name='q', style='border-top-right-radius: 0;border-bottom-right-radius: 0')
+                    button.btn.btn-primary(type='submit') search
+                a.nav-link(href='/auth/signUp') Login/SignUp
+
+        .container
+            .row.d-flex.justify-content-center
+                each pro in product
+                    .card.m-3.position-relative(style='width: 19rem;')
+                        img.card-img-top.img-fluid.img-thumbnail(src= pro.avatar, alt='...')
+                        .card-body
+                            .d-flex.justify-content-center(style='height: 50px')
+                                h5.card-title= pro.proName
+                            p.card-text
+                            | #{pro.proContent.slice(0, 100)+"..."}
+                            .d-flex.justify-content-center
+                                a.btn.btn-outline-primary.pl-5.pr-5.mt-5(href='/cart/add/'+ pro.id) Add to Cart
+            
+            if sumPage > 6
+                nav.d-flex.justify-content-center(aria-label='Page navigation example')
+                    ul.pagination
+                        - let pre, next
+                        if page === 1
+                            - pre = page;
+                        if page > 1
+                            - pre = page - 1;
+                            - disabled = ""
+                        if page === sumPage/6
+                            - next = page;
+                        if page < sumPage/6
+                            - next = page + 1;
+                        li.page-item
+                            a.page-link(href='/?page='+pre) Previous
+
+                        - let n = 1;
+                        while n <= sumPage/6
+                            li.page-item
+                                a.page-link(href='/?page='+n)= n++
+
+                        li.page-item
+                            a.page-link(href='/?page='+next) Next

@@ -1,0 +1,30 @@
+extends ../layout
+block content
+    h1 Edit
+
+    form(action="/product/edit/"+product.id, method='POST' enctype='multipart/form-data')
+
+        p.mb-1 Name
+        input(type="text", name='proName', value= product.proName)
+
+        p.mb-1.mt-3 Content
+        textarea(name='proContent', rows='5', cols='50')= product.proContent
+
+        p.mb-1.mt-3 Price
+        input(type="text", name='proPrice', value= product.proPrice)
+
+        p.mb-1.mt-3 ID
+        select(name="proId")
+            option(value= product.proId, selected)= product.proId
+            option(value="iphone") Iphone
+            option(value="samsung") Samsung
+            option(value="xiaomi") Xiaomi
+            option(value="oppo") Oppo
+            option(value="huawei") Huawei
+            option(value="vivo") Vivo
+
+        p.mb-1.mt-3 Avatar
+        input(type="file", name='avatar')
+        br
+        br
+        button Update

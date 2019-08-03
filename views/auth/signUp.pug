@@ -1,0 +1,80 @@
+doctype html
+html        
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        title SignUp
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+    body(style="background-image: url('/images/natural-landscape-44.jpg')")
+        div(style='position: fixed; top: 0; z-index: 1; height: 80px; width: 100%; background-color: #e9ebee')
+            .row
+                h1(style='text-align: center; color: blue; display: flex; align-items: center; justify-content: center; height: 70px; width: 40%') Login
+                form(action="/auth/login", method='POST', style='display: flex; height: 70px; width: 60%')
+                    div.p-1.ml-auto(style='height: 70px')
+                        p.mb-1 User Name or Email
+                        input(type="text", name='userName' value= userName ? userName.userName: "")
+
+                    div.p-1(style='height: 70px')
+                        p.mb-1 Password
+                        input(type="password", name='password')
+                
+                    div.p-1.mr-5(style='display: flex; align-items: center; height: 90px')
+                        button.btn.btn-primary.pl-3.pr-3 Login
+
+        div.container(style='position: relative; top: 80px; height:100vh; background-color: #8686864f')
+            h1.p-5(style='text-align: center; color: aqua') Create a new account
+
+            div.d-flex.justify-content-center
+                form(action="/auth/signUp", method='POST', style='width: 70%')
+                    if errors
+                        each erro in errors
+                            .alert.alert-danger= erro
+
+                    div.mb-3.pl-5
+                        p.mb-1 User Name
+                        input.from-control(type="text", name='userName' value= userName)
+
+                    div.mb-3.pl-5
+                        p.mb-1 Password
+                        input(type="password", name='password')
+                    
+                    div.mb-4.pl-5
+                        p.mb-1 Confirm password
+                        input(type="password", name='confirmPassword')
+
+                    div.mb-4.pl-5
+                        h4.mb-3 Birthday
+                        select.mr-3(aria-label='Day')
+                            option(value='Day', selected= 1) Day
+                            - let Day = 1;
+                            while Day <= 31
+                                option(value=Day)= Day++
+
+                        select.mr-3(aria-label='Month')
+                            option(value='Month', selected= 1) Month
+                            - let Month = 1;
+                            while Month <= 12
+                                option(value=Month)= Month++
+
+                        select.mr-3(aria-label='Year')
+                            option(value='Year', selected= 1) Year
+                            - let Year = 2019;
+                            while Year >= 1921
+                                option(value=Year)= Year--
+
+                    div.mb-4.pl-5
+                        h4.mb-3 Gender
+                        input#nam.mr-1(type='radio', name='gender')
+                        label(for='nam') Male
+                        input#nu.ml-3.mr-1(type='radio', name='gender')
+                        label(for='nu') Female
+                        input#tc.ml-3.mr-1(type='radio', name='gender', checked='checked')
+                        label(for='tc') Custom
+
+                    div.mb-5.pl-5
+                        input#dk.mr-1(type='checkbox', checked='checked')
+                        label(for='dk') You agree to our Terms, Data Policy and Cookie Policy.
+
+                    div.d-flex.justify-content-center
+                        button.btn.btn-primary.pl-5.pr-5 Sign Up

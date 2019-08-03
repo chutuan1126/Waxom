@@ -1,0 +1,27 @@
+extends ../layout
+
+block content
+  h1 Users Name
+  table.table
+    thead
+      tr
+        th(scope='col') STT
+        th(scope='col') Image
+        th(scope='col') User Name
+        th(scope='col') Password
+        th(scope='col') Actions
+    tbody
+      each user, index in users
+        tr
+          th(scope='row') #{index+1}
+          td
+            img(src=user.avatar, width='32')
+          td #{user.userName}
+          td #{user.password}
+          td.row
+            a(href="/users/"+ user.id)
+              button.btn.btn-primary.mr-2 View
+            form(action="/users/edit/"+ user.id, method='GET')
+              button.btn.btn-warning.mr-2(type='submit') Edit
+            form(action="/users/delete/"+user.id, method='POST')
+                button.btn.btn-danger.mr-2(type='submit') Delete

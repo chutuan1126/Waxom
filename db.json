@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "userName": "chutuan1126@gmail.com",
+      "password": "Tuan261197",
+      "confirmPassword": "Tuan261197",
+      "id": "5_wJnfQEb",
+      "avatar": "/images/natural-landscape-44.jpg"
+    }
+  ],
+  "product": [
+    {
+      "proName": "Xiaomi Redmi Note 7 64GB",
+      "proContent": "Xiaomi Redmi Note 7 là chiếc smartphone giá rẻ mới được giới thiệu vào đầu năm 2019 với nhiều trang bị đáng giá như thiết kế notch giọt nước hay camera lên tới 48 MP.",
+      "proPrice": "4.990.000",
+      "proId": "xiaomi",
+      "id": "eqskGYnA3",
+      "avatar": "/uploads/adaf9490bc7c1c9f68027aef2fb7b6a0"
+    },
+    {
+      "proName": "iPhone Xs Max 256GB",
+      "proContent": "Sau 1 năm mong chờ, chiếc smartphone cao cấp nhất của Apple đã chính thức ra mắt mang tên iPhone Xs Max. Máy các trang bị các tính năng cao cấp nhất từ chip A12 Bionic, dàn loa đa chiều cho tới camera kép tích hợp trí tuệ nhân tạo.",
+      "proPrice": "35.990.000",
+      "proId": "iphone",
+      "id": "FjSH8U11_",
+      "avatar": "/uploads/0c13c4c65e602af1268980d9a556bac9"
+    },
+    {
+      "proName": "iPhone 8 Plus 256GB",
+      "proContent": "iPhone 8 Plus là chiếc smartphone cao cấp của Apple, là bản nâng cấp nhẹ của chiếc iPhone 7 Plus đã ra mắt trước đó với cấu hình mạnh mẽ cùng camera có nhiều cải tiến.",
+      "proPrice": "25.790.000",
+      "proId": "iphone",
+      "id": "OAdNyDrGt",
+      "avatar": "/uploads/5a518e1e2cbe2feb500d081b221b1b8a"
+    },
+    {
+      "proName": "iPhone X 256GB",
+      "proContent": "iPhone X được đã được Apple cho ra mắt ngày 12/9 vừa rồi đánh dấu chặng đường 10 năm lần đầu tiên iPhone ra đời. iPhone X mang trên mình thiết kế hoàn toàn mới với màn hình Super Retina viền cực mỏng và trang bị nhiều công nghệ hiện đại như nhận diện khuôn mặt Face ID, sạc pin nhanh và sạc không dây cùng khả năng chống nước bụi cao cấp.",
+      "proPrice": "27.990.000",
+      "proId": "iphone",
+      "id": "2ajmfwIBx",
+      "avatar": "/uploads/c5fb44e6a0f6f0df942667cb120fe0b6"
+    },
+    {
+      "proName": "Samsung Galaxy S10+ 512GB",
+      "proContent": "Samsung Galaxy S10+ (512GB) - phiên bản kỷ niệm 10 năm chiếc Galaxy S đầu tiên ra mắt, là một chiếc smartphone hội tủ đủ các yếu tố mà bạn cần ở một chiếc máy cao cấp trong năm 2019.",
+      "proPrice": "28.990.000",
+      "proId": "samsung",
+      "id": "XwfoEeItb",
+      "avatar": "/uploads/cd4ee78b75427baa4696b1978e680bb5"
+    },
+    {
+      "proName": "Samsung Galaxy Note 9 512GB",
+      "proContent": "Sau thành công vang dội của Galaxy Note 8 thì Samsung chính thức giới thiệu phiên bản tiếp theo tới người dùng cái tên Samsung Galaxy Note 9 512GB mang trong mình hàng hoạt các thay đổi đột phá với điểm nhấn đặc biệt đến từ chiếc bút S-Pen thần thánh cùng một viên pin dung lượng khổng lồ tới 4.000 mAh.",
+      "proPrice": "21.490.000",
+      "proId": "samsung",
+      "id": "5xtEGd4js",
+      "avatar": "/uploads/108faff883874fbdc8599175b12eed7f"
+    },
+    {
+      "proName": "OPPO Reno 10x Zoom Edition",
+      "proContent": "Những chiếc flagship trong năm 2019 không chỉ có một camera chụp ảnh đẹp, chụp xóa phông ảo diệu mà còn phải \"chụp thật xa\" và với chiếc OPPO Reno 10x Zoom Edition chính thức gia nhập thị trường \"smartphone có camera siêu zoom\".",
+      "proPrice": "20.990.000",
+      "proId": "oppo",
+      "id": "sqNrvHpXI",
+      "avatar": "/uploads/066e89599dafe0752a617c7e3b03db56"
+    },
+    {
+      "proName": "OPPO R17 Pro",
+      "proContent": "OPPO R17 Pro được xem là chiếc smartphone sự hiện thân của cái đẹp khi được khoác lên mình một thiết kế trẻ trung và hiện đại, cùng với đó là hàng loạt các trang bị cao cấp đi từ cấu hình cho đến camera.",
+      "proPrice": "13.990.000",
+      "proId": "oppo",
+      "id": "nHurIBbVa",
+      "avatar": "/uploads/dadef2012e8f57a18fff444f592139e8"
+    },
+    {
+      "proName": "Xiaomi Mi 9 SE",
+      "proContent": "Vẫn như thường lệ thì bên cạnh chiếc flagship Xiaomi Mi 9 cao cấp của mình thì Xiaomi cũng giới thiệu thêm phiên bản rút gọn là chiếc Xiaomi Mi 9 SE. Máy vẫn sở hữu cho mình nhiều trang bị cao cấp tương tự đàn anh.",
+      "proPrice": "8.490.000",
+      "proId": "xiaomi",
+      "id": "Pyr2OkjHC",
+      "avatar": "/uploads/558d3d4e5d0a2c248f26b395adc42d68"
+    },
+    {
+      "proName": "Vivo V15 128GB",
+      "proContent": "Được xem là bản rút gọn của flagship Vivo V15 Pro sắp ra mắt, chiếc điện thoại Vivo V15 vẫn mang trong mình nhiều nét đáng giá với thiết kế cao cấp cùng camera sefie pop-up 32 MP lạ mắt.",
+      "proPrice": "7.490.000",
+      "proId": "vivo",
+      "id": "QNE7RIh04",
+      "avatar": "/uploads/646610710f8a9d09fe841dc8c6d2a6aa"
+    },
+    {
+      "proName": "Huawei P30 Pro",
+      "proContent": "Huawei P30 Pro là một bước đột phá của Huawei cũng như camera trên smartphone khi đem lại khả năng zoom như một \"kính viễn vọng\".",
+      "proPrice": "22.990.000",
+      "proId": "huawei",
+      "id": "veQV2seA2",
+      "avatar": "/uploads/2538fad226fc06e621ef68840292c684"
+    },
+    {
+      "proName": "Huawei Y9 Prime",
+      "proContent": "Huawei Y9 Prime (2019) là phiên bản kế nhiệm của chiếc Y9 Prime (2018) đã ra mắt năm ngoái và cũng là chiếc điện thoại đầu tiên của Huawei được trang bị công nghệ camera trượt và màn hình tràn viền ra bốn cạnh.",
+      "proPrice": "5.490.000",
+      "proId": "huawei",
+      "id": "ch0DmAQS-",
+      "avatar": "/uploads/c7e37cc05fab5729e380dfc51f5212c8"
+    },
+    {
+      "proName": "Samsung Galaxy A50 64GB",
+      "proContent": "Samsung Galaxy A50 là chiếc smartphone tầm trung mới của Samsung trong năm 2019 với nhiều tính năng hấp dẫn, đặc biệt là có cả cảm biến vân tay dưới màn hình.",
+      "proPrice": "6.990.000",
+      "proId": "samsung",
+      "id": "AiPVXnK_C",
+      "avatar": "/uploads/samsung-galaxy-a50-black.png"
+    },
+    {
+      "proName": "Vivo Y15",
+      "proContent": "Vivo Y15 là chiếc smartphone phổ thông mới ra mắt trong thời gian gần đây của Vivo với điểm nhấn chính là dung lượng pin \"siêu khủng\" cùng những trang bị khá hấp dẫn.",
+      "proPrice": "4.990.000",
+      "proId": "vivo",
+      "id": "vwooBHPCU",
+      "avatar": "/uploads/vivo-y15-blue.png"
+    }
+  ],
+  "session": [
+    {
+      "id": "aHpT0viXi"
+    }
+  ]
+}
