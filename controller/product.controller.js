@@ -4,7 +4,7 @@ const assert = require('assert');
 module.exports.product = (req, res) => {
     product.find({}, (err, products) => {
         assert.equal(null, err);
-        res.render('products/products', { products: products });
+        res.send(products);
     });
 };
 
